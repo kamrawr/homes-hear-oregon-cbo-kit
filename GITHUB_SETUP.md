@@ -28,7 +28,25 @@ git branch -M main
 git push -u origin main
 ```
 
-## 3. Configure Repository Settings (Optional)
+## 3. Enable GitHub Pages
+
+Enable the website for your repository:
+
+1. Go to repository **Settings**
+2. Navigate to **Pages** (in left sidebar)
+3. Under **Source**, select "Deploy from a branch"
+4. Choose branch: **main** (or **master**)
+5. Choose folder: **/docs**
+6. Click **Save**
+
+Your website will be available at:
+```
+https://YOUR_USERNAME.github.io/homes-hear-oregon-cbo-kit/
+```
+
+(Replace YOUR_USERNAME with your actual GitHub username)
+
+## 4. Configure Repository Settings (Optional)
 
 On GitHub, go to your repository settings:
 
@@ -45,9 +63,11 @@ Add topics to help others find your repo:
 Add the description:
 > Documentation kit for Community-Based Organizations administering Oregon's HOMES and HEAR energy rebate programs
 
-### Repository Details
-- Website: Link to ODOE's home energy rebates page if desired
-- Add relevant topics as listed above
+### Website
+Add your GitHub Pages URL:
+```
+https://YOUR_USERNAME.github.io/homes-hear-oregon-cbo-kit/
+```
 
 ## 4. Next Steps
 
