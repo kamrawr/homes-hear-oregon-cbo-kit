@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fund Braiding Guide - Oregon HOMES & HEAR</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .toc {
+            background: var(--bg-white);
+            padding: 1.5rem;
+            border-left: 4px solid var(--secondary-color);
+            margin: 2rem 0;
+        }
+        .toc ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .toc li {
+            margin: 0.5rem 0;
+        }
+        .toc a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        .prohibition {
+            background: #fff5f5;
+            border-left: 4px solid #e53e3e;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        .allowed {
+            background: #f0fff4;
+            border-left: 4px solid var(--success);
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-title">Oregon HOMES & HEAR</h1>
+            <ul class="nav-menu">
+                <li><a href="index.html">Overview</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="eligibility.html">Eligibility</a></li>
+                <li><a href="operations.html">CBO Operations</a></li>
+                <li><a href="braiding-funds.html" class="active">Fund Braiding</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Fund Braiding Guide</h1>
+            <p class="subtitle">Rules and strategies for combining multiple funding sources with HOMES and HEAR</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section>
+            <div class="alert alert-info">
+                <strong>Last Updated:</strong> Based on public guidance as of November 5, 2025. This is a working reference, not legal advice.
+            </div>
+
+            <h2>Purpose and Audience</h2>
+            <p>This guide is for <strong>Community-Based Organizations (CBOs)</strong> and program staff in Oregon helping households access HOMES and HEAR programs while <strong>stacking multiple funding sources</strong> for whole-home retrofit and repair projects.</p>
+
+            <div class="toc">
+                <h3>Contents</h3>
+                <ul>
+                    <li><a href="#glossary">1. Quick Glossary</a></li>
+                    <li><a href="#architecture">2. Oregon Program Architecture</a></li>
+                    <li><a href="#eligibility">3. Household & Project Eligibility</a></li>
+                    <li><a href="#federal-rules">4. Federal Fund-Braiding Rules</a></li>
+                    <li><a href="#hear-rules">5. HEAR-Specific Rules</a></li>
+                    <li><a href="#oregon-design">6. Oregon Program Design Details</a></li>
+                    <li><a href="#braiding-logic">7. Practical Fund-Braiding Logic</a></li>
+                    <li><a href="#examples">8. Example Stacking Patterns</a></li>
+                    <li><a href="#tactics">9. Tactics & Strategies</a></li>
+                    <li><a href="#risks">10. Risk Flags & Open Items</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="glossary">
+            <h2>1. Quick Glossary</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Term</th>
+                        <th>Definition</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>HOMES</strong></td>
+                        <td>Home Efficiency Rebates (IRA §50121). Performance-based rebates for whole-home efficiency retrofits measured by percent energy savings.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>HEAR</strong></td>
+                        <td>Home Electrification and Appliance Rebates (IRA §50122). Point-of-sale rebates for high-efficiency electric equipment for LMI households only.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>LMI</strong></td>
+                        <td>Low- or Moderate-Income: <80% AMI (low-income) or 80-150% AMI (moderate-income)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AMI</strong></td>
+                        <td>Area Median Income - income thresholds vary by county and household size</td>
+                    </tr>
+                    <tr>
+                        <td><strong>QEP</strong></td>
+                        <td>Qualified Electrification Project - bundle of HEAR-eligible upgrades in one project</td>
+                    </tr>
+                    <tr>
+                        <td><strong>WAP</strong></td>
+                        <td>Weatherization Assistance Program - federal weatherization grants for low-income households</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="architecture">
+            <h2>2. Oregon Program Architecture</h2>
+
+            <h3>Funding & Timeline</h3>
+            <ul>
+                <li>Oregon received <strong>$113.6 million</strong> from DOE for HOMES and HEAR</li>
+                <li>Rebates expected to be available starting <strong>spring 2026</strong></li>
+                <li>Programs are time-limited but build long-term delivery infrastructure</li>
+            </ul>
+
+            <h3>Implementers</h3>
+            <div class="program-cards">
+                <div class="card">
+                    <h3>Energy Trust of Oregon</h3>
+                    <p><strong>Territory:</strong> Investor-owned utilities</p>
+                    <ul>
+                        <li>Portland General Electric (PGE)</li>
+                        <li>Pacific Power</li>
+                        <li>NW Natural, Cascade Natural Gas, Avista</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Earth Advantage</h3>
+                    <p><strong>Territory:</strong> Consumer-owned utilities</p>
+                    <ul>
+                        <li>Municipal utilities</li>
+                        <li>Electric cooperatives</li>
+                        <li>Idaho Power territory</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Program Features</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>HOMES</th>
+                        <th>HEAR</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Type</strong></td>
+                        <td>Performance-based, whole-home</td>
+                        <td>Point-of-sale, appliance-specific</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Savings Requirement</strong></td>
+                        <td>≥20% or ≥35% modeled savings</td>
+                        <td>None (equipment-based)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Max Rebate</strong></td>
+                        <td>Up to $10,000 (50-100% of cost)</td>
+                        <td>Up to $14,000 for LMI</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Eligible Buildings</strong></td>
+                        <td>Existing homes only</td>
+                        <td>New and existing construction</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Retroactive?</strong></td>
+                        <td>Yes (back to Aug 16, 2022)</td>
+                        <td>No</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="eligibility">
+            <h2>3. Household & Project Eligibility</h2>
+
+            <h3>Income Tiers</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tier</th>
+                        <th>AMI Range</th>
+                        <th>HOMES</th>
+                        <th>HEAR</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Low-Income</strong></td>
+                        <td><80% AMI</td>
+                        <td>✓ Eligible</td>
+                        <td>✓ Eligible (up to 100% of cost)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Moderate-Income</strong></td>
+                        <td>80-150% AMI</td>
+                        <td>✓ Eligible</td>
+                        <td>✓ Eligible (up to 50% of cost)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>>150% AMI</strong></td>
+                        <td>>150% AMI</td>
+                        <td>✓ Eligible</td>
+                        <td>✗ Not Eligible</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Building Types</h3>
+            <ul>
+                <li>Single-family homes (owner-occupied and rental)</li>
+                <li>Multifamily buildings (5+ units)</li>
+                <li>Manufactured homes</li>
+                <li>1-4 unit properties</li>
+            </ul>
+
+            <h3>Funding Set-Asides</h3>
+            <div class="alert alert-info">
+                <strong>HOMES:</strong> At least 40% reserved for low-income households, plus 10% for low-income multifamily<br>
+                <strong>HEAR:</strong> 60% for low-income single-family, plus 20% for low-income multifamily
+            </div>
+        </section>
+
+        <section id="federal-rules">
+            <h2>4. Federal Fund-Braiding Rules</h2>
+
+            <div class="alert alert-warning">
+                <h3 style="margin-top: 0;">⚠️ Critical: Two Key Prohibitions</h3>
+                <p>All HOMES and HEAR projects must obey BOTH of these federal rules:</p>
+            </div>
+
+            <div class="prohibition">
+                <h4>❌ Prohibition 1: Cannot Exceed Project Cost</h4>
+                <p>Total upfront funding (all federal grants + federal loans + non-federal funding) <strong>cannot exceed 100% of project cost</strong>.</p>
+            </div>
+
+            <div class="prohibition">
+                <h4>❌ Prohibition 2: No Double-Dipping Federal Grants</h4>
+                <p>Neither HOMES nor HEAR may be combined with <strong>any other federal grant or rebate for the same single upgrade</strong>.</p>
+                <p><strong>Same upgrade</strong> = that specific heat pump, water heater, panel, wiring segment, insulation job, etc.</p>
+                <p>If using multiple federal grants in one project, they must fund <strong>distinct, separable upgrades</strong> with clear invoicing.</p>
+            </div>
+
+            <h3>Allowed Combinations</h3>
+
+            <div class="allowed">
+                <h4>✓ HOMES + HEAR (Both IRA Rebates)</h4>
+                <p>Projects <strong>may receive rebates from both programs</strong>, but <strong>not for the same upgrade</strong>.</p>
+                <p><strong>Example:</strong> Use HOMES for whole-home retrofit package (envelope + HVAC) and HEAR for distinct electrification (panel, stove).</p>
+            </div>
+
+            <div class="allowed">
+                <h4>✓ Other Federal Grants (WAP, DOE grants, etc.)</h4>
+                <p>Can combine WAP + HOMES/HEAR on the same house, but <strong>each funding stream must pay for different upgrades</strong>.</p>
+                <p><strong>Example:</strong> WAP covers health & safety + basic air sealing; HOMES funds deep efficiency package; HEAR funds panel + HPWH.</p>
+            </div>
+
+            <div class="allowed">
+                <h4>✓ Federal Loans or GGRF Financing</h4>
+                <p>Federal <strong>loan programs are not treated as grants</strong> and can finance remaining costs beyond IRA rebates.</p>
+                <p>Must still respect the 100% project cost ceiling.</p>
+            </div>
+
+            <div class="allowed">
+                <h4>✓ Non-Federal Funding</h4>
+                <p><strong>State, local, utility, and philanthropic funds can be layered</strong> with HOMES/HEAR to cover remaining costs.</p>
+                <p>Must respect 100% cost ceiling and any restrictions from those programs.</p>
+            </div>
+
+            <div class="allowed">
+                <h4>✓ Tax Credits (Limited Timeframe)</h4>
+                <p>Can combine tax credits with rebates under specific rules. Congress terminated IRA efficiency tax credits early - only available through <strong>December 31, 2025</strong>.</p>
+            </div>
+        </section>
+
+        <section id="hear-rules">
+            <h2>5. HEAR-Specific Rules</h2>
+
+            <h3>Key Constraints</h3>
+            <ul>
+                <li>HEAR rebate paid <strong>only for projects initiated after state launch authorization</strong> (no pre-launch work)</li>
+                <li>Each dwelling receives rebate <strong>only once per appliance category</strong></li>
+                <li>Only one rebate for: electric stove, cooktop, range, OR oven (pick one)</li>
+                <li>Can receive both kitchen appliance AND heat pump dryer, but combined max is <strong>$840</strong></li>
+                <li><strong>Maximum per dwelling: $14,000 total</strong></li>
+            </ul>
+
+            <div class="alert alert-warning">
+                <strong>CBO Strategy:</strong> HEAR rebates are essentially once-per-category per dwelling. Don't "burn" a category on a marginal upgrade if a deeper project is coming. Coordinate carefully for multifamily buildings.
+            </div>
+        </section>
+
+        <section id="oregon-design">
+            <h2>6. Oregon Program Design Details</h2>
+
+            <h3>Relationship to Other Oregon Programs</h3>
+            <p>ODOE encourages combining HOMES/HEAR with existing incentives:</p>
+            <ul>
+                <li><strong>Energy Trust</strong> and public utility efficiency programs</li>
+                <li><strong>State heat pump programs:</strong>
+                    <ul>
+                        <li>Oregon Heat Pump Purchase Program</li>
+                        <li>Community Heat Pump Deployment Program</li>
+                        <li>Oregon Rental Home Heat Pump Program</li>
+                    </ul>
+                </li>
+                <li><strong>OHCS Weatherization Assistance Program (WAP)</strong></li>
+                <li>Use <a href="https://incentives.oregon.gov" target="_blank">Energy HIPPO</a> to find all available incentives</li>
+            </ul>
+
+            <h3>Contractor Requirements</h3>
+            <p>Federal rules require most HOMES and HEAR projects to use <strong>pre-approved qualified contractors</strong>.</p>
+            <ul>
+                <li>Build relationships early with contractors likely to enroll</li>
+                <li>Ensure contractors understand line-item invoicing requirements</li>
+                <li>Documentation of which fund paid for which upgrade</li>
+            </ul>
+        </section>
+
+        <section id="braiding-logic">
+            <h2>7. Practical Fund-Braiding Logic</h2>
+
+            <h3>High-Level Intake Process</h3>
+            <div class="role-list">
+                <div class="role-item">
+                    <h3>1. Determine Geography</h3>
+                    <p>Identify whether home is in Energy Trust or Earth Advantage territory</p>
+                </div>
+                <div class="role-item">
+                    <h3>2. Assess Income</h3>
+                    <p>Confirm AMI tier and screen for categorical eligibility (SNAP, LIHEAP, etc.)</p>
+                </div>
+                <div class="role-item">
+                    <h3>3. Check Safety</h3>
+                    <p>Identify deal-breakers for electrification (unsafe wiring, severe issues). May need WAP first.</p>
+                </div>
+                <div class="role-item">
+                    <h3>4. Define Project Type</h3>
+                    <p>Whole-home retrofit (HOMES anchor) vs. targeted electrification (HEAR anchor) vs. mixed</p>
+                </div>
+                <div class="role-item">
+                    <h3>5. Inventory Funding</h3>
+                    <p>Federal (HOMES, HEAR, WAP), State (heat pump programs), Utility, Local/Philanthropic, Loans</p>
+                </div>
+                <div class="role-item">
+                    <h3>6. Assign Upgrades</h3>
+                    <p>One federal grant per upgrade. Use state/utility/philanthropic to close gaps. Total ≤100% cost.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="examples">
+            <h2>8. Example Stacking Patterns</h2>
+
+            <div class="alert alert-info">
+                <strong>Note:</strong> These are illustrative patterns, not program commitments. Always confirm details with ODOE and implementers.
+            </div>
+
+            <h3>Pattern A: Low-Income Deep Retrofit + Electrification</h3>
+            <div class="card">
+                <h4>Household Profile</h4>
+                <p><80% AMI, single-family, gas furnace + water heater, high energy burden, significant shell issues</p>
+                
+                <h4>Potential Funding Stack</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Funding Source</th>
+                            <th>Covers</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>WAP (Federal)</strong></td>
+                            <td>Critical health & safety, baseline weatherization (air sealing/insulation different from HOMES/HEAR scope)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>HOMES (Federal)</strong></td>
+                            <td>Whole-home efficiency package (remaining insulation, duct sealing, smart thermostat, potentially heat pump if not using HEAR). Must achieve ≥20% savings.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>HEAR (Federal)</strong></td>
+                            <td>Distinct upgrades: panel/service upgrade, branch-circuit wiring, heat pump water heater (if HOMES covers space heating)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Utility (Non-Federal)</strong></td>
+                            <td>Additional rebates for heat pump and HPWH, stacked on top of federal</td>
+                        </tr>
+                        <tr>
+                            <td><strong>GGRF Loan (Federal Loan)</strong></td>
+                            <td>Covers remaining customer co-pay with affordable payments</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p><strong>Key:</strong> Break scope into clearly separable line items with funding source tags. Decide early whether heat pump is funded by HOMES or HEAR.</p>
+            </div>
+
+            <h3>Pattern B: Moderate-Income Multifamily</h3>
+            <div class="card">
+                <h4>Household Profile</h4>
+                <p>100% AMI renter in 6-unit building, electric resistance heat, high bills</p>
+                
+                <h4>Potential Funding Stack</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Funding Source</th>
+                            <th>Covers</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>HEAR (Federal)</strong></td>
+                            <td>Per-unit allocations (up to $14k/LMI unit) for central heat pump system + panel/wiring</td>
+                        </tr>
+                        <tr>
+                            <td><strong>HOMES (Federal)</strong></td>
+                            <td>Separate shell upgrades (windows, added insulation) tied to whole-building savings - must be different measures than HEAR</td>
+                        </tr>
+                        <tr>
+                            <td><strong>OHCS WAP (Federal)</strong></td>
+                            <td>Different upgrades (health & safety, ventilation) not covered by HOMES/HEAR</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Utility/Local (Non-Federal)</strong></td>
+                            <td>Additional incentives for central HVAC or shell measures</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p><strong>Key:</strong> Track per-unit caps. Ensure no unit exceeds $14k HEAR maximum or receives duplicate federal grants for same upgrade.</p>
+            </div>
+
+            <h3>Pattern C: >150% AMI Homeowner</h3>
+            <div class="card">
+                <h4>Household Profile</h4>
+                <p>>150% AMI, already electrified, wants shell upgrades</p>
+                
+                <h4>Eligibility Reality</h4>
+                <ul>
+                    <li><strong>Not eligible for HEAR</strong> (limited to ≤150% AMI)</li>
+                    <li><strong>Eligible for HOMES</strong> if retrofits meet savings thresholds</li>
+                </ul>
+
+                <h4>Potential Funding Stack</h4>
+                <ul>
+                    <li><strong>HOMES</strong> for deep shell work + system tuning (≥20% savings)</li>
+                    <li><strong>IRA tax credits</strong> if work completed by Dec 31, 2025</li>
+                    <li><strong>Energy Trust/utility incentives</strong></li>
+                    <li><strong>Private financing</strong></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="tactics">
+            <h2>9. Tactics & Strategies</h2>
+
+            <h3>Design Around Upgrades, Not Programs</h3>
+            <p><strong>Core Principle:</strong> Start by designing the optimal technical package, then assign each upgrade to the best available funding source.</p>
+
+            <h3>Invoice & Documentation Requirements</h3>
+            <div class="alert alert-warning">
+                <strong>Critical for Compliance:</strong>
+                <ul>
+                    <li>Require <strong>line-item invoices</strong> with materials, labor, and per-upgrade cost</li>
+                    <li>Add column for <strong>"Funding Source"</strong> (HOMES, HEAR, WAP, Utility, etc.)</li>
+                    <li>Maintain <strong>funding stack worksheet</strong> per project:
+                        <ul>
+                            <li>Total all upfront funding (must be ≤100% of project cost)</li>
+                            <li>Confirm no upgrade has more than one federal grant</li>
+                            <li>Track HEAR category usage vs. $14k cap</li>
+                        </ul>
+                    </li>
+                    <li>Store income documentation and utility territory verification securely</li>
+                </ul>
+            </div>
+
+            <h3>CBO Workflow Best Practices</h3>
+            <ul>
+                <li><strong>Segment clients</strong> by income and housing type</li>
+                <li><strong>Build standard project archetypes</strong> for common scenarios:
+                    <ul>
+                        <li>Old gas single-family homes in IOU territory</li>
+                        <li>All-electric manufactured homes</li>
+                        <li>Small LMI multifamily</li>
+                        <li>Tribal housing</li>
+                    </ul>
+                </li>
+                <li><strong>Pre-define for each archetype:</strong>
+                    <ul>
+                        <li>Preferred funding stack</li>
+                        <li>Contractor partners</li>
+                        <li>Documentation checklist</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Using Loans Strategically</h3>
+            <p>Federal loans and GGRF products are separate from federal grants:</p>
+            <ul>
+                <li>Use HOMES/HEAR + WAP + state/utility funds to bring cost down as close to zero as possible</li>
+                <li>Use <strong>low-interest loans only for remaining co-pays</strong></li>
+                <li>Aim for short terms for low-income households</li>
+                <li>For very low-income with no repayment capacity, prioritize direct grants over loans</li>
+                <li>Use philanthropic dollars to buy down principal/interest</li>
+            </ul>
+        </section>
+
+        <section id="risks">
+            <h2>10. Risk Flags & Open Items</h2>
+
+            <div class="alert alert-warning">
+                <h3 style="margin-top: 0;">⚠️ Implementation Details Still Evolving</h3>
+                <p>Even with published narratives and FAQs, some details will continue to evolve through ODOE's Implementation Blueprints and implementer program manuals.</p>
+            </div>
+
+            <h3>Watch For:</h3>
+            <ul>
+                <li>Final Oregon-specific HOMES/HEAR program manuals from ODOE, Energy Trust, and Earth Advantage</li>
+                <li>Updates to tax credit availability and legislative changes</li>
+                <li>New OHCS, PCEF, local, or philanthropic programs that interact with these rebates</li>
+            </ul>
+
+            <h3>When In Doubt:</h3>
+            <div class="prohibition">
+                <p><strong>Golden Rules:</strong></p>
+                <ul>
+                    <li>✗ Do NOT stack two federal grants on the same line item</li>
+                    <li>✓ Keep total upfront funding ≤100% of project cost</li>
+                    <li>✓ Maintain full documentation</li>
+                </ul>
+                <p>This keeps you inside the guardrails while maximizing savings and equity for the households you serve.</p>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Related Resources</h2>
+            <p>Explore other program guidance and operational materials:</p>
+            <div class="cta-buttons">
+                <a href="programs.html" class="btn btn-primary">Program Details</a>
+                <a href="eligibility.html" class="btn btn-secondary">Eligibility Guide</a>
+                <a href="operations.html" class="btn btn-secondary">CBO Operations</a>
+                <a href="resources.html" class="btn btn-secondary">All Resources</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Oregon HOMES/HEAR CBO Documentation Kit</p>
+            <p>Maintained by Community Consulting Partners LLC | <a href="https://github.com/YOUR_USERNAME/homes-hear-oregon-cbo-kit">View on GitHub</a></p>
+            <p class="disclaimer">This is an independent documentation resource. For official program information, always refer to <a href="https://www.oregon.gov/energy/Incentives/Pages/home-energy-rebates.aspx">ODOE</a>, Energy Trust of Oregon, and Earth Advantage.</p>
+        </div>
+    </footer>
+</body>
+</html>
