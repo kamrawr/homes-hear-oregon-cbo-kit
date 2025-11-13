@@ -11,42 +11,33 @@ It does **not** mirror or replace official guidance. Instead, it:
 
 ## 📖 Online Documentation
 
-This repository includes three comprehensive GitHub Pages websites:
+This repository includes two comprehensive GitHub Pages websites:
 
-### 🏠 **[Main CBO Guide](https://kamrawr.github.io/homes-hear-oregon-cbo-kit/)**
+### 🏠 **[Complete CBO Guide](https://kamrawr.github.io/homes-hear-oregon-cbo-kit/)**
 
-Comprehensive 6-page website covering:
-- Program overview (HOMES & HEAR)
-- Detailed program requirements and rebate amounts
-- Eligibility guidelines (income, housing, documentation)
-- CBO operations guide (intake, referrals, data privacy)
-- Complete resource directory with all official links
-- Fund braiding rules and strategies
+Your comprehensive resource for Oregon HOMES & HEAR programs:
+- **Program Overview:** HOMES and HEAR basics, timeline, and Oregon implementers
+- **Detailed Requirements:** Rebate amounts, eligibility criteria, and program rules  
+- **Eligibility Guidelines:** Income verification, housing types, and documentation
+- **CBO Operations:** Intake processes, referrals, data privacy, and partnerships
+- **Fund Braiding:** Rules for combining federal, state, utility, and local funding
+- **Resources:** Complete directory of official links and contacts
 
-**→ [Visit Main Guide](https://kamrawr.github.io/homes-hear-oregon-cbo-kit/)**
+**→ [Access Complete CBO Guide](https://kamrawr.github.io/homes-hear-oregon-cbo-kit/)**
 
-### 💰 **[Fund Braiding Guide](https://kamrawr.github.io/homes-hear-oregon-cbo-kit/braiding-funds.html)** 
+---
 
-Advanced guide for combining multiple funding sources:
-- Federal fund-braiding rules and prohibitions
-- HOMES + HEAR + WAP + utility rebates
-- Example stacking patterns for different household types
-- Documentation and invoicing requirements
-- Risk flags and compliance strategies
+### 📋 **[CBO RFQ Interactive Hub](https://kamrawr.github.io/homes-hear-oregon-cbo-kit/rfq-overview.html)**
 
-**→ [Visit Fund Braiding Guide](https://kamrawr.github.io/homes-hear-oregon-cbo-kit/braiding-funds.html)**
-
-### 📋 **[CBO RFQ Overview & Interactive Hub](https://kamrawr.github.io/homes-hear-oregon-cbo-kit/rfq-overview.html)**
-
-Interactive guide for CBOs responding to Energy Trust RFQ:
-- Background on HOMES & HEAR partnership opportunities
-- Scope of work for CBO partners (outreach, intake, navigation)
-- Desired CBO qualifications and partnership structure
+Interactive guide for CBOs responding to Energy Trust partnership opportunities:
+- Background on HOMES & HEAR CBO partnership roles
+- Scope of work: outreach, intake, navigation, and documentation support
+- Desired qualifications and partnership structure
 - Expected deliverables and submission requirements
-- **Interactive tools:** Role selector, fit checker, intake conversation helper
+- **Interactive Tools:** Role selector, organizational fit checker, intake helpers
 - Timeline from late 2025 through 2026 launch
 
-**→ [Visit RFQ Overview](https://kamrawr.github.io/homes-hear-oregon-cbo-kit/rfq-overview.html)**
+**→ [Access RFQ Interactive Hub](https://kamrawr.github.io/homes-hear-oregon-cbo-kit/rfq-overview.html)**
 
 ## 📂 Repository Use
 
