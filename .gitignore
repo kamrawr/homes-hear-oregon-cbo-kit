@@ -1,0 +1,31 @@
+# Operating System
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.bak
+*.log
+
+# CBO-specific sensitive data
+# Add any local intake forms, client data, or PII-containing files here
+cbo-operations/local-intake-forms/
+cbo-operations/client-data/
+*.xlsx
+*.xls
+!templates/*.xlsx
+!templates/*.xls
+
+# Environment and secrets
+.env
+.env.local
+credentials.json
+secrets/
